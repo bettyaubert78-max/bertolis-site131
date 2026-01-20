@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>BERTOLIS – Accompagnement & Formations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.9;
+  color: #1f2937;
+}
+
+header {
+  background: #0f2a44;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+nav {
+  background: #143d63;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section {
+  display: none;
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+section.active {
+  display: block;
+}
+
+h2 {
+  color: #0f2a44;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #0f2a44;
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+footer {
+  background: #0f2a44;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>BERTOLIS</h1>
+<p>Accompagnement administratif, financier et formations professionnelles</p>
+</header>
+
+<nav>
+<a onclick="showPage('presentation')">Présentation</a>
+<a onclick="showPage('creation')">Création d’entreprise</a>
+<a onclick="showPage('suivi')">Suivi administratif</a>
+<a onclick="showPage('formations')">Formations</a>
+<a onclick="showPage('contact')">Contact</a>
+</nav>
+
+<!-- PRÉSENTATION -->
+<section id="presentation" class="active">
+<h2>Présentation de BERTOLIS</h2>
+
+<p>
+Betty AUBERT – Fondatrice de BERTOLIS – Directrice Administrative et Financière
+depuis plus de 15 ans, j’accompagne les créateurs d’entreprise et dirigeants de
+TPE dès la création de leur activité, puis tout au long de la vie de leur
+entreprise dans le suivi administratif, organisationnel et financier.
+</p>
+
+<p>
+Mon parcours professionnel m’a permis de gérer l’ensemble des fonctions
+supports indispensables au bon fonctionnement d’une entreprise : administration
+des ventes (ADV), contrôle de gestion, comptabilité, logistique, systèmes
+d’information et organisation interne. Cette vision globale me permet
+d’anticiper les besoins des dirigeants et de proposer des solutions concrètes,
+adaptées à la réalité du terrain.
+</p>
+
+<p>
+J’ai également conduit de nombreux projets de mise en place d’ERP (comptabilité,
+ADV, EDI, workflows), en lien avec des équipes opérationnelles, des experts
+comptables et des prestataires techniques. Mon approche est volontairement
+pragmatique, orientée résultats, avec un objectif clair : simplifier la gestion
+et fiabiliser les process.
+</p>
+
+<p>
+Avec BERTOLIS, je propose un accompagnement structuré, fiable et personnalisé,
+permettant aux dirigeants de se concentrer pleinement sur le développement de
+leur activité, en toute sérénité, tout en ayant la certitude que leur
+administration est maîtrisée.
+</p>
+</section>
+
+<!-- CRÉATION -->
+<section id="creation">
+<h2>Accompagnement à la création d’entreprise</h2>
+
+<p>
+Créer une entreprise est une étape déterminante qui nécessite des choix
+stratégiques structurants. BERTOLIS accompagne les porteurs de projet dès les
+premières réflexions afin de poser des bases solides et sécurisées.
+</p>
+
+<p>
+L’accompagnement inclut l’aide au choix du statut juridique le plus adapté à la
+situation personnelle et aux objectifs du créateur (entreprise individuelle,
+micro-entreprise, EURL, SARL, SAS, SASU). Chaque statut est analysé sous l’angle
+juridique, fiscal et social afin d’éviter les erreurs coûteuses à moyen terme.
+</p>
+
+<p>
+BERTOLIS intervient également sur la construction du business plan, l’analyse de
+la rentabilité, la définition des charges, la prévision de trésorerie et
+l’organisation administrative initiale. L’objectif est de rendre le dirigeant
+acteur et pleinement conscient des enjeux financiers de son projet.
+</p>
+
+<p>
+Enfin, l’accompagnement comprend la gestion des formalités administratives,
+permettant au créateur de se concentrer sur son cœur de métier en toute
+confiance.
+</p>
+
+<button onclick="showPage('contact')">Être accompagné</button>
+</section>
+
+<!-- SUIVI -->
+<section id="suivi">
+<h2>Gestion et suivi administratif</h2>
+
+<p>
+La gestion administrative est souvent perçue comme une contrainte, alors qu’elle
+est un véritable levier de performance lorsqu’elle est bien structurée.
+BERTOLIS propose un accompagnement sur mesure pour les dirigeants souhaitant
+externaliser ou optimiser leur organisation administrative.
+</p>
+
+<p>
+Le suivi comprend la gestion administrative courante, l’organisation des
+documents, le suivi des obligations déclaratives, la coordination avec les
+partenaires externes (expert-comptable, banque, organismes sociaux) et la mise en
+place de procédures claires.
+</p>
+
+<p>
+BERTOLIS agit comme un véritable support mensuel, permettant au dirigeant de
+gagner du temps, de sécuriser son activité et de prendre des décisions éclairées
+grâce à une information fiable et structurée.
+</p>
+
+<p>
+Chaque accompagnement est personnalisé en fonction de la taille de l’entreprise,
+de son secteur d’activité et de son niveau de maturité.
+</p>
+
+<button onclick="showPage('contact')">Demander un suivi</button>
+</section>
+
+<!-- FORMATIONS -->
+<section id="formations">
+<h2>Formations professionnelles</h2>
+
+<p>
+BERTOLIS propose des formations conçues pour rendre les professionnels
+autonomes, efficaces et confiants dans l’utilisation de leurs outils de gestion.
+Les formations sont adaptées aux besoins réels du terrain et accessibles à tous
+les niveaux.
+</p>
+
+<button onclick="showPage('excel')">Formation Excel</button>
+<button onclick="showPage('powerbi')">Formation Power BI</button>
+<button onclick="showPage('compta')">Formation Comptabilité</button>
+</section>
+
+<section id="excel">
+<h2>Formation Excel</h2>
+
+<p>
+La formation Excel s’adresse aux débutants, intermédiaires et utilisateurs
+avancés souhaitant améliorer leur maîtrise du logiciel et optimiser leur efficacité professionnell. Elle a pour objectif
+de permettre aux participants de structurer, organiser et exploiter efficacement leurs données en apprenant à utiliser
+les fonctionnalités essentielles d'Excel, telles que les formules, les fonctions courantes, la mise en forme et la gestion 
+de tableaux. La formation propose également une approche approfondie des tableaux croisés dynamiques afin d'analyser et de 
+synthétiser de grands volumes de données de manière claire et pertinente. Une attention particulière est portée aux outils
+d'analyseet d'automatisation, permettant de fiabiliser les calculs, de gagner du temps et d'augmenter significativement la 
+productivité. A l'issue de la formation, les participants sont capables d'utiliser Excel de façon autonome, structurée et 
+performante dans leurs activités professionnelles quotidiennes. 
+
+</p>
+
+<p>
+L’objectif est de permettre aux participants d’utiliser Excel comme un véritable
+outil d’aide à la décision, adapté à leur activité professionnelle.
+</p>
+
+<button onclick="showPage('contact')">S’inscrire / Demander info</button>
+</section>
+
+<section id="powerbi">
+<h2>Initiation Power BI</h2>
+
+<p>
+Power BI est un outil décisionnel puissant qui permet de transformer des données brutes, souvent complexes et dispersées, 
+en tableaux de bord clairs, visuels et dynamiques, facilitant l'analyse et la prise de décision. Cette formation d'initiation 
+a pour objectif d'accompagner les participants dans la découverte de Power BI en leur permettant de comprendre les fondamentaux
+de la monétisation des données, notamment l'importation, le nettoyage et la structuration des sources de données, ainsi que les
+principes de base des relations entre tables. Elle aborde également les notions essentielles de visualisation des données, en apprenant
+à créer des graphiques pertinents, interactifs et adaptés aux besoins métier. Grâce à une approche progressive et pratique, 
+les apprenants acquièrent les bases nécessaires pour concevoir leurs premiers rapports et tableaux de bord, interpréter les résultats
+et exploiter efficacement les données dans un contexte professionnel.
+</p>
+
+<p>
+Elle s’adresse aux professionnels souhaitant piloter leur activité grâce à des
+indicateurs clairs et fiables.
+</p>
+
+<button onclick="showPage('contact')">S’inscrire / Demander info</button>
+</section>
+
+<section id="compta">
+<h2>Formation Comptabilité pour entrepreneurs</h2>
+
+<p>
+Cette formation permet aux dirigeants d'acquérir une compréhension claire et structurée des fondamentaux de la comptabilité, afin de
+mieux appréhender le fonctionnement financier de leur entreprise. Elle vise à leur les clés pour lire, interpréter et analyser les principaux 
+documents financiers, tels que le bilan, le compte de résultat et les tableaux de suivi, en identifiant les indicateurs essentiels à la bonne 
+santé de l'activité. La formation met également l'accent sur le vocabulaire comptable et les mécanismes de base, permettant aux dirigeants
+de dialoguer de manière efficace et constructive avec leur expert-comptable, de poser les bonnes questions et de prendre des décisions éclairées.
+A l'issue de la formation, les participants disposent d'une vision financière plus précise de leur entreprise et sont en mesure de piloter
+leur activité avec davantage de confiance et de pertinence
+</p>
+
+<p>
+L’objectif est de rendre les chiffres accessibles afin de piloter l’entreprise
+avec sérénité et lucidité.
+</p>
+
+<button onclick="showPage('contact')">S’inscrire / Demander info</button>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Contact</h2>
+
+<p>
+<strong>Téléphone :</strong> 06 10 80 11 68<br>
+<strong>Email :</strong> betty.aubert@outlook.com
+</p>
+
+<form action="https://formspree.io/f/XXXXABCD" method="POST">
+<input type="text" name="nom" placeholder="Nom et prénom" required>
+<input type="email" name="email" placeholder="Adresse email" required>
+
+<select name="besoin" required>
+<option value="">Votre besoin</option>
+<option>Création d’entreprise</option>
+<option>Suivi administratif</option>
+<option>Formation Excel</option>
+<option>Formation Power BI</option>
+<option>Formation Comptabilité</option>
+</select>
+
+<textarea name="message" rows="6" placeholder="Votre message"></textarea>
+
+<button type="submit">Envoyer</button>
+</form>
+</section>
+
+<footer>
+© BERTOLIS – Tous droits réservés
+</footer>
+
+<script>
+function showPage(id) {
+  document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+  document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>
