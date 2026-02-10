@@ -27,12 +27,28 @@ header {
 
 nav {
   background: #143d63;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding: 15px;
+  padding: 10px 20px;
 }
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-logo img {
+  height: 45px; /* ajuste si besoin */
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
 
 nav a {
   color: white;
@@ -93,11 +109,19 @@ footer {
 </header>
 
 <nav>
-<a onclick="showPage('presentation')">Présentation</a>
-<a onclick="showPage('creation')">Création d’entreprise</a>
-<a onclick="showPage('suivi')">Suivi administratif</a>
-<a onclick="showPage('formations')">Formations</a>
-<a onclick="showPage('contact')">Contact</a>
+  <div class="nav-container">
+    <a href="#presentation" class="nav-logo">
+      <img src="images.png" alt="Logo BERTOLIS">
+    </a>
+
+    <div class="nav-links">
+      <a onclick="showSection('presentation')">Présentation</a>
+      <a onclick="showSection('creation')">Création d'entreprise</a>
+      <a onclick="showSection('suivi')">Suivi administratif</a>
+      <a onclick="showSection('formations')">Formations</a>
+      <a onclick="showSection('contact')">Contact</a>
+    </div>
+  </div>
 </nav>
 
 <!-- PRÉSENTATION -->
