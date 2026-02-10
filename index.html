@@ -6,11 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.9;
-  color: #1f2937;
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
 }
 
 header {
@@ -81,8 +86,10 @@ footer {
 <body>
 
 <header>
-<h1>BERTOLIS</h1>
-<p>Accompagnement administratif, financier et formations professionnelles</p>
+  <div class="header-container">
+    <img src="images.png" alt="Logo BERTOLIS" class="logo">
+  </div>
+
 </header>
 
 <nav>
