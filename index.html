@@ -89,7 +89,10 @@ input, select, textarea {
   margin-top: 15px;
   font-size: 16px;
 }
-
+main {
+  flex: 1;
+  padding: 60px 20px;
+}
 footer {
   background: #0f2a44;
   color: white;
@@ -101,8 +104,6 @@ footer {
 
 <body>
 
-</header>
-
 <nav>
   <div class="nav-container">
     <a href="#presentation" class="nav-logo">
@@ -110,12 +111,13 @@ footer {
     </a>
 
     <div class="nav-links">
+<main>
       <a onclick="showPage('presentation')">Présentation</a>
 <a onclick="showPage('creation')">Création d’entreprise</a>
 <a onclick="showPage('suivi')">Suivi administratif</a>
 <a onclick="showPage('formations')">Formations</a>
 <a onclick="showPage('contact')">Contact</a>
-
+</main>
     </div>
   </div>
 </nav>
